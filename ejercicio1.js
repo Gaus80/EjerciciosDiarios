@@ -3,19 +3,18 @@ class Solution {
 
         let suma = 0;
         let valorInicial = 0;
-        let encontrar = 0;
-        for(let i = 0;i < n; i++){
-            while(suma > s && i <= n){
-                suma -= arr[valorInicial];
-                valorInicial++;
-                encontrar = suma;
-               }
 
+        for(let i = 0;i < n; i++){
                suma += arr[i];
 
-        if(encontrar === s){
-            let indice = i;
-            let 
+               while(suma > s && i <= n){
+                suma -= arr[valorInicial];
+               
+                valorInicial++;
+               }
+               console.log(suma)
+
+        if(suma === s){
             return `${valorInicial+1}${i+1}`;
         }
     }  
@@ -24,9 +23,9 @@ class Solution {
     }
 
 }
-let arr=[1,0];
-let n= 2;
-let s= 0;
+let arr = [1,2,3,7,5];
+let n = 5;
+let s = 12;
 let sol = new Solution();
 
 console.log(sol.subarraySum(arr,n,s));
