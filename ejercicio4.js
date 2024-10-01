@@ -4,20 +4,17 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    let suma;
-    let indice1;
-    let indice2;
-
-    for(let i = 0; i<nums.length;i++){
-        suma = nums[i] + nums[i+1];
-        console.log(suma)
-        if(suma === target){
-           indice1 = Number(i);
-           indice2 = Number(i+1);
-           return [indice1,indice2]
+          
+    for(let i = 0;i<nums.length;i++){
+        console.log("i: " + nums[i])
+        for(let j = i +1; j<nums.length;j++){
+            console.log("j: " + nums[j])
+            if(nums[i] + nums[j] === target){
+              return [i, j]
+            }
         }
     }
-};
-console.log(twoSum([2,7,11,15],26
-
-))
+}
+    
+    
+console.log(twoSum([3,2,9,3,5],14));

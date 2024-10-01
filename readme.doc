@@ -9,3 +9,6 @@ LETCODE
 
 Ejercicio3: Evaluar si un elemento es palíndromo
 LINK: https://leetcode.com/problems/palindrome-number/
+
+Ejercicio4: Buscar las posiciones de dos elementos dentro de un arreglo que se suma sea igual a lo solicitado
+LINK: https://leetcode.com/problems/two-sum/solutions/
